@@ -30,19 +30,19 @@ End Points
 
 Employee : 
 
-POST | /employee/create        | Create Employee
-PUT  | /employee/update?id=1  | Update Employee Details
-PUT  | /employee/updateDepartment?id=1&departmentId=1 | Update Employees Department
-GET  | /employee/getAllEmployees   | Fetch All Employees
-GET  | /employee/getAllEmployeeIds?lookup=true | Fetch All Employees And Ids 
+POST | /employee/create        | Create Employee , 
+PUT  | /employee/update?id=1  | Update Employee Details , 
+PUT  | /employee/updateDepartment?id=1&departmentId=1 | Update Employees Department , 
+GET  | /employee/getAllEmployees   | Fetch All Employees , 
+GET  | /employee/getAllEmployeeIds?lookup=true | Fetch All Employees And Ids  .
 
 Department :
 
-POST   | /department/create | Create Department
-DELETE | /department/delete?id=1 | Delete Department
-PUT    | /department/update?id=1 | Update Department
-GET    | /department/getAllDepartments | Fetch All Departments
-GET    | /department/getDepartment?id=3&expand=true | Fetch Department And Their Employee
+POST   | /department/create | Create Department , 
+DELETE | /department/delete?id=1 | Delete Department , 
+PUT    | /department/update?id=1 | Update Department , 
+GET    | /department/getAllDepartments | Fetch All Departments , 
+GET    | /department/getDepartment?id=3&expand=true | Fetch Department And Their Employee . 
 
 
 
