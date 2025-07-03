@@ -1,0 +1,77 @@
+{
+	"createEmployee": {
+		"request": {
+			"name": "HR 5",
+			"dateOfBirth": "1997-08-30",
+			"salary": 75000.0,
+			"address": "Kerala",
+			"role": "Hr Trainee",
+			"joiningDate": "2022-06-01",
+			"bonusPercentage": 10.5,
+			"department": 7,
+			"reportingManager": 8
+		},
+		"response": {
+			"id": 35,
+			"name": "HR 5",
+			"dateOfBirth": "1997-08-30",
+			"salary": 75000.0,
+			"address": "Kerala",
+			"role": "Hr Trainee",
+			"joiningDate": "2022-06-01",
+			"bonusPercentage": 10.5,
+			"department": "7",
+			"reportingManager": "8"
+		}
+	},
+	
+	"updateEmployee": {
+		"request": {
+			"name": "Treasury Dev 1",
+			"dateOfBirth": "1997-08-30",
+			"salary": 75000.0,
+			"address": "Kerala",
+			"role": "Software Developer",
+			"joiningDate": "2022-06-01",
+			"bonusPercentage": 10.5
+		},
+		"response": {
+			"id": 35,
+			"name": "Treasury Dev 1",
+			"dateOfBirth": "1997-08-30",
+			"salary": 75000.0,
+			"address": "Kerala",
+			"role": "Software Developer",
+			"joiningDate": "2022-06-01",
+			"bonusPercentage": 10.5,
+			"department": "HR Department",
+			"reportingManager": "Admin5"
+		}
+	},
+	
+	"createDepartment": {
+		"request": {
+			"departmentName": "Sample Department",
+			"departmentHead": "8"
+		},
+		"response": {
+			"id": 11,
+			"departmentName": "Sample Department",
+			"departmentHead": "8",
+			"creationDate": "2025-07-03"
+		}
+	},
+	
+	"updateDepartment": {
+		"request": {
+			"departmentName": "Sample Department",
+			"departmentHead": "8"
+		},
+		"response": {
+			"id": 11,
+			"departmentName": "HR Department",
+			"departmentHead": "Admin5",
+			"creationDate": "2025-07-02"
+		}
+	}
+}

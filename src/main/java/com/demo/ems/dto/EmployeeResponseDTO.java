@@ -13,6 +13,7 @@ public class EmployeeResponseDTO {
 
 	private String name;
 
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date dateOfBirth;
 
 	private double salary;
@@ -21,6 +22,7 @@ public class EmployeeResponseDTO {
 
 	private String role;
 
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date joiningDate;
 
 	private double bonusPercentage;
