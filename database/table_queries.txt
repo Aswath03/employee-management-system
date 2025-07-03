@@ -1,0 +1,26 @@
+
+********* department *******************
+CREATE TABLE ems.department (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `department_name` varchar(300) DEFAULT NULL,
+  `department_head_id` int(11) NOT NULL,
+  `created_on` date DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+************ employee ******************
+
+CREATE TABLE ems.employee (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `department_id` int(11) NOT NULL,
+  `reporting_manager_id` int(11) DEFAULT NULL,
+  `name` varchar(300) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `salary` decimal(14,2) DEFAULT NULL,
+  `address` varchar(500) DEFAULT NULL,
+  `role` varchar(300) DEFAULT NULL,
+  `joining_date` date DEFAULT NULL,
+  `bonus_percentage` decimal(14,2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
